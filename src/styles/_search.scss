@@ -1,0 +1,49 @@
+.search{
+	@include background('../imgs/cover1.jpg');
+	background-position:center;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+
+
+	.input-group{
+		font-size: 0;
+		[type=search], button{
+			height: 60px;
+			font-size: 16px;
+		}
+
+		[type=search]{
+			border-radius: 0;
+			border:0px;
+
+
+		}
+
+
+		button.secondary{
+			background-color: #f7f7f7;
+			color: $primaryColor;
+			border: #f7f7f7
+		}
+		
+        button.secondary:hover{
+			background-color: $primaryColor;
+			border :1px solid $primaryColor ; 
+			color: white;
+			padding :10px 15px;
+		}
+
+
+	}
+
+	.advancedSearch{
+		display: none;
+		label{
+			color: white;
+		}
+
+	}
+	
+}
+	

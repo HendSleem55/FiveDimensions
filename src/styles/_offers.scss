@@ -1,0 +1,21 @@
+
+.offers{
+    p , h5 , h6 {
+    text-align: right;
+    }
+
+
+    .discount{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primaryColor;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 0px 0px 0px 7px;
+    }
+
+    img {
+        height:300px  ;
+    }
+}

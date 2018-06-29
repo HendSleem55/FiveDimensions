@@ -1,0 +1,283 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+button.secondary {
+  background-color: transparent;
+  border: 1px solid #C0151B;
+  padding: 10px 15px;
+  color: #C0151B; }
+
+button.primary {
+  background-color: #C0151B;
+  border: 1px solid #C0151B;
+  color: white;
+  padding: 10px 15px; }
+
+button {
+  cursor: pointer; }
+
+h2 {
+  margin: 0; }
+
+hr {
+  width: 40px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #C0151B;
+  transition: all .3s ease-in-out; }
+
+section:hover hr {
+  width: 100px; }
+
+body {
+  direction: rtl; }
+
+.Download, .contact, .Details {
+  display: flex;
+  color: #f7f7f7;
+  padding: 80px 0;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%; }
+  .Download section, .contact section, .Details section {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center; }
+
+.primarycolor {
+  color: #C0151B; }
+
+.OverlayParent {
+  position: relative; }
+  .OverlayParent img {
+    height: 220px;
+    width: 100%;
+    box-shadow: 2px 2px 3px gray; }
+  .OverlayParent .overlay {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    transition: all .3s ease-in-out; }
+    .OverlayParent .overlay button {
+      display: none; }
+  .OverlayParent:hover .overlay {
+    height: 100%; }
+    .OverlayParent:hover .overlay button {
+      display: inline; }
+
+.page-link:hover {
+  color: #C0151B; }
+
+.page-link.active {
+  background-color: #C0151B;
+  color: white; }
+
+header .navbar .active {
+  color: #C0151B !important; }
+
+header .navbar img {
+  max-width: 50px;
+  max-height: 50px; }
+
+header .navbar button {
+  border-radius: 2px; }
+
+header .navbar a {
+  color: #6E6E6E !important;
+  text-align: right; }
+
+.search {
+  background-image: url("../imgs/cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center; }
+  .search .input-group {
+    font-size: 0; }
+    .search .input-group [type=search], .search .input-group button {
+      height: 60px;
+      font-size: 16px; }
+    .search .input-group [type=search] {
+      border-radius: 0;
+      border: 0px; }
+    .search .input-group button.secondary {
+      background-color: #f7f7f7;
+      color: #C0151B;
+      border: #f7f7f7; }
+    .search .input-group button.secondary:hover {
+      background-color: #C0151B;
+      border: 1px solid #C0151B;
+      color: white;
+      padding: 10px 15px; }
+  .search .advancedSearch {
+    display: none; }
+    .search .advancedSearch label {
+      color: white; }
+
+.Download {
+  background-image: url("../imgs/downloads-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #F7f7f7; }
+  .Download p {
+    color: #A0A0A0; }
+
+.contact {
+  background-color: #000; }
+  .contact p {
+    background-color: #A0A0A0;
+    display: inline-block; }
+  .contact button {
+    margin: 2px; }
+  .contact span {
+    color: #C0151B; }
+
+.newArrival, .mostpopular {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 50px; }
+  .newArrival img, .mostpopular img {
+    height: 300px; }
+  .newArrival #carouselExampleIndicators h5, .newArrival #carouselExampleIndicators p, .newArrival #carouselExampleIndicators h6, .mostpopular #carouselExampleIndicators h5, .mostpopular #carouselExampleIndicators p, .mostpopular #carouselExampleIndicators h6 {
+    text-align: right; }
+  .newArrival #carouselExampleIndicators .carousel-indicators li, .mostpopular #carouselExampleIndicators .carousel-indicators li {
+    background-color: black; }
+  .newArrival #carouselExampleIndicators .carousel-indicators li.active, .mostpopular #carouselExampleIndicators .carousel-indicators li.active {
+    background-color: #C0151B; }
+  .newArrival #carouselExampleIndicators .carousel-indicators, .mostpopular #carouselExampleIndicators .carousel-indicators {
+    bottom: -50px; }
+
+.mostpopular {
+  background-color: white; }
+
+.adv {
+  background-image: url("../imgs/adv.jpg");
+  background-size: cover;
+  height: 240px;
+  background-position: center; }
+  .adv h1 {
+    color: white; }
+
+.store h5, .store h6, .store p {
+  text-align: right; }
+
+.Details {
+  background-color: #F7f7f7;
+  color: #A0A0A0; }
+
+#bookrent {
+  width: 100%; }
+  #bookrent .books {
+    background-color: white; }
+    #bookrent .books .col-2 {
+      padding: 10px;
+      box-shadow: 0px 0px 0px 0px;
+      transition: all .3s ease-in-out; }
+      #bookrent .books .col-2 .bookDetail {
+        border: 1px solid lightgrey;
+        padding: 10px 20px;
+        transition: all .3s ease-in-out; }
+      #bookrent .books .col-2 img {
+        height: 230px; }
+    #bookrent .books .col-2:hover {
+      cursor: pointer; }
+      #bookrent .books .col-2:hover .bookDetail {
+        border: 0;
+        box-shadow: 0px 0px 10px 1px gray; }
+    #bookrent .books h5, #bookrent .books p, #bookrent .books h6 {
+      text-align: right; }
+  #bookrent .search .secondary {
+    background-color: white; }
+  #bookrent .secondary:hover {
+    background-color: #C0151B;
+    color: white;
+    transition: all .3s ease-in-out; }
+
+.offers p, .offers h5, .offers h6 {
+  text-align: right; }
+
+.offers .discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #C0151B;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 0px 0px 0px 7px; }
+
+.offers img {
+  height: 300px; }
+
+.icons {
+  width: 100%;
+  background-color: #C0151B;
+  height: 40px; }
+
+.carousel-item .card, .event section {
+  background-color: #f7f7f7; }
+
+.event:hover {
+  cursor: pointer; }
+
+.event p {
+  margin-bottom: 0; }
+
+.newsTitle, .eventsTitle {
+  background-color: #C0151B;
+  color: white; }
+
+.buyBook {
+  background-image: url("../imgs/unsplash2.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white; }
+
+.creativity {
+  background-color: #f7f7f7;
+  padding-bottom: 60px; }
+  .creativity .newsTitle {
+    background-color: #292929; }
+  .creativity button {
+    position: absolute;
+    bottom: -50px; }
+
+.latestNews {
+  background-color: #f7f7f7; }
+  .latestNews .latestNewsCover {
+    background-image: url("../imgs/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; }
+
+.col-10 .oneNews {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 3px lightgrey;
+  transition: all .3s ease-out; }
+  .col-10 .oneNews .col-9 {
+    text-align: right; }
+
+.col-10 .oneNews:hover {
+  box-shadow: 2px 5px 17px lightgrey;
+  cursor: pointer; }
+
+.event .col-3 img {
+  width: 70px;
+  height: 70px; }
+
+.listOfNews h5 {
+  color: #C0151B; }
+
+footer {
+  background: #000;
+  color: #F7f7f7; }
+  footer p {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; }
